@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3sp"
+        android:layout_above="@id/takePic">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <ImageView
+                android:id="@+id/hidden"
+                android:layout_width="280sp"
+                android:layout_height="280sp"
+                android:layout_marginBottom="200sp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/person_icon" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <Button
+        android:id="@+id/takePic"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/camera"
+        android:drawablePadding="-10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Take Picture" />
+
+    <Button
+        android:id="@+id/processClick"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:drawableRight="@drawable/arrow"
+        android:paddingRight="10dp"
+        android:text="Process" />
+
+
+
+
+</RelativeLayout>
